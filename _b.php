@@ -7,7 +7,7 @@
  * Author: WordPress智库
  */
 
-use WenpriseSpaceName\Assets;
+use WenpriseSpaceName\Frontend;
 
 if ( ! defined('ABSPATH')) {
     exit;
@@ -26,7 +26,7 @@ require_once SPACENAME_PATH . 'vendor/autoload.php';
 
 add_action('plugins_loaded', function ()
 {
-    new Assets();
+    new Frontend();
 });
 
 add_action('init', function ()

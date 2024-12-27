@@ -1,4 +1,5 @@
-/node_modules
+/frontend/node_modules
 /vendor
 .idea
-/dist
+/frontend/dist
+/frontend/mix-manifest.json
