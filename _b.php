@@ -20,7 +20,7 @@ const SPACENAME_MAIN_FILE = __FILE__;
 define('SPACENAME_PATH', plugin_dir_path(__FILE__));
 define('SPACENAME_URL', plugin_dir_url(__FILE__));
 
-define('MWP_DEV_MODE', true);
+define('SPACENAME_DEV_MODE', true);
 
 require_once SPACENAME_PATH . 'vendor/autoload.php';
 

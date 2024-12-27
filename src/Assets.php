@@ -11,7 +11,7 @@ class Assets
 
     public function enqueue_assets()
     {
-        if (MWP_DEV_MODE) {
+        if (SPACENAME_DEV_MODE) {
             // Development mode - use Vite dev server
             wp_enqueue_script('_b-dev-server', 'http://localhost:3000/@vite/client', [], null);
             wp_enqueue_script('_b-main', 'http://localhost:3000/assets/js/main.js', [], null);
