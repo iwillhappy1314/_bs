@@ -8,7 +8,7 @@ if [ -f "../$zip_name" ]; then
 fi
 
 if [ "$1" = "production" ]; then
-    zip -r "../$zip_name" . -x "composer.*" -x "frontend/*.yaml" -x "frontend/package.json" -x "frontend/*.lock" -x "frontend/*.js" -x "bin/*" -x ".git/*" -x "frontend/node_modules/*"
+    zip -r "../$zip_name" . -x "composer.*" -x "frontend/*.yaml" -x "frontend/package.json" -x "frontend/*.lock" -x "bin/*" -x ".git/*" -x "frontend/node_modules/*"
 else
-    zip -r "../$zip_name" . -x "composer.*" -x "frontend/*.yaml" -x "frontend/package.json" -x "frontend/*.lock" -x "frontend/*.js" -x "bin/*" -x ".git/*" -x "frontend/node_modules/*"
+    zip -r "../$zip_name" . -x "composer.*" -x "frontend/*.yaml" -x "frontend/*.lock" -x "bin/*" -x ".git/*" -x "frontend/node_modules/*"
 fi
