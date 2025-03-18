@@ -3,3 +3,10 @@
 .idea
 /frontend/dist
 /frontend/mix-manifest.json
+.DS_Store
+.vscode
+.env
+.env.local
+.env.development
+.env.production
+.idea
