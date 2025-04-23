@@ -9,7 +9,7 @@ class Init
     */
     private static ?Init $instance = null;
 
-    
+
     /**
     * 私有克隆方法，防止克隆对象
     */
@@ -38,7 +38,7 @@ class Init
     * 私有构造函数，防止直接实例化
     */
     private function __construct() {
-        add_action('init', array($this, 'init'));
+        $this->init();
     }
 
 
