@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: _b
  * Plugin URI:  http://www.wpzhiku.com/
@@ -9,7 +10,7 @@
 
 use WenpriseSpaceName\Init;
 
-if ( ! defined('ABSPATH')) {
+if (! defined('ABSPATH')) {
     exit;
 }
 
@@ -23,12 +24,10 @@ define('SPACENAME_DEV_MODE', true);
 
 require_once SPACENAME_PATH . 'vendor/autoload.php';
 
-add_action('plugins_loaded', function ()
-{
+add_action('plugins_loaded', function () {
     Init::get_instance();
 });
 
-add_action('init', function ()
-{
+add_action('init', function () {
     load_plugin_textdomain('_b-', false, basename(dirname(__FILE__)) . '/languages/');
 });

@@ -9,23 +9,7 @@ class Init
     */
     private static ?Init $instance = null;
 
-    /**
-    * 私有构造函数，防止直接实例化
-    */
-    private function __construct() {
-        add_action('init', array($this, 'init'));
-    }
-
-    function init(){
-        $classes = [
-            Frontend::class,
-        ];
-
-        foreach ($classes as $class) {
-            new $class;
-        }
-    }
-
+    
     /**
     * 私有克隆方法，防止克隆对象
     */
@@ -47,5 +31,24 @@ class Init
             self::$instance = new self();
         }
         return self::$instance;
+    }
+
+
+     /**
+    * 私有构造函数，防止直接实例化
+    */
+    private function __construct() {
+        add_action('init', array($this, 'init'));
+    }
+
+
+    function init(){
+        $classes = [
+            Frontend::class,
+        ];
+
+        foreach ($classes as $class) {
+            new $class;
+        }
     }
 }

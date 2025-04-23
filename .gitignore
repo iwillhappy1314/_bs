@@ -10,3 +10,4 @@
 .env.development
 .env.production
 .idea
+.history
