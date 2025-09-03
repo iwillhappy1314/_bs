@@ -19,7 +19,7 @@ class Init
     /**
     * 私有反序列化方法，防止反序列化创建对象
     */
-    private function __wakeup() {
+    public function __wakeup() {
     }
 
     /**
